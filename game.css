@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-bar {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(3, 7, 84);
+    color: #fff;
+    padding: 10px 100px;
+    border-bottom: rgb(116, 121, 171) 5px solid;
+}
+.logo{
+    background: url(./logo1.jpg) no-repeat;
+    height: 50px;
+    width: 120px;
+
+    background-size: cover;
+
+}
+.top-bar .leaderboard {
+    background-color: #fff;
+    color: #000;
+    padding: 5px ;
+    border-radius: 5px;
+}
+.top-bar .leaderboard a {
+    text-decoration: none;
+    color: rgb(29 34 130);
+}
+.gamearea .background-car{
+    width: 100vw;
+    background-position: center;
+    background-size: center;
+    background-image: linear-gradient(rgba(0,0,0,0.39),rgba(0,0,0,0.39));
+    height: 100vh;
+}
+.video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9){
+    .video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .video{
+        width: auto;
+        height: 100%;
+    }
+}
+.background-grass{
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+}
+.gamearea .startscreen {
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    /* margin-top: 150px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150px;
+    width: 500px;
+    background-color: rgba(81, 81, 81, 0.374);
+    border-radius: 20px;
+    border: #fff 2px solid;
+    color: rgb(255, 255, 255);
+    box-shadow: 20px 20px rgba(255, 0, 0, 0.413), -2em 0 3em rgb(76, 17, 255);
+}
+.gamearea .startscreen p{
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 50;
+}
+.hide {
+    display: none !important;
+}
+.gamearea .background-grass{
+    background: url(pexels-stephan-müller-753869.jpg) no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 10vh;
+}
+
+.restart{
+    margin-top: -200px;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+    width: 700px;
+    background: url(accident.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    border: #fff 2px solid;
+    color: rgb(8, 8, 8);
+    box-shadow: 20px 20px rgba(255, 0, 0, 0.413), -2em 0 3em rgb(76, 17, 255);
+}
+.restart h1{
+    border: 3px solid rgb(0, 34, 255);
+    text-align: center;
+    background: rgba(7, 19, 242, 0.571);
+    color: rgb(254, 254, 254);
+    width: 300px;
+    border-radius: 15px;
+}
+.restart button{
+    background: #000;
+    color: rgb(178, 165, 255);
+    padding: 3px 15px;
+    font-size: 30px;
+    border: 3px solid blue;
+    border-radius: 10px;
+}
+.gamearea .background-grass .gamescreen{
+    height: 92.8vh;
+    width: 400px;
+    background: #000;
+    border-left: 5px dashed rgb(109, 108, 108);
+    border-right: 5px dashed rgb(109, 108, 108);
+    position: relative;
+    overflow: hidden;
+}
+
+.car{
+    width: 50px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    bottom: 120px;
+    background-image: url(caar.png);
+    background-size: cover;
+    border-radius: 30px 30px 10px 10px;
+}
+
+.lines{
+    width: 10px;
+    height: 80px;
+    background: white;
+    position: absolute;
+    margin-left: 190px;
+}
+
+.other{
+    width: 50px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    bottom: 120px;
+    background-image: url(images.jpeg);
+    background-size: cover;
+    border-radius: 17px 17px 8px 8px;
+}

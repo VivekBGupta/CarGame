@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup</title>
+    <link rel="stylesheet" href="./signup.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ252FeIAjdOhLkWc1j-Y3ZbDwSnF6PXa290ULo5jYqhKfKKDWms4cSIkKQsXm7ecIb8ks&usqp=CAU" type="image/icon type">
+</head>
+
+<body>
+    <main>
+        <div class="background">
+            <video autoplay loop muted plays-inline class="video">
+                <source src="./login.mp4" type="video/mp4">
+            </video> 
+            <div class="container">
+                <div class="text">
+                    <h1>Signup</h1>
+                    <p>Have Account? <a href="./login.html">Login</a></p>
+                </div>
+                <div class="box">
+                    <form id="signUpForm" >
+                        <input type="text" class="fullname" placeholder="Full Name" required>
+                        <input type="email" class="email" placeholder="Enter your Email" required>
+                        <input type="text" class="SignUpUsername" placeholder="Username" required>
+                        <input type="password" class="signUpPassword" placeholder="Password" required>
+                        <p id="signupError">.</p>
+                        <button id="signUpButton" type="submit" >signUp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>

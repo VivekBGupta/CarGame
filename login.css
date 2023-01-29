@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #000;
+}
+
+.background {
+    /* background: url(car.png) no-repeat;
+    background-size: cover; */
+    width: 100vw;
+    background-position: center;
+    background-size: center;
+    background-image: linear-gradient(rgba(0,0,0,0.39),rgba(0,0,0,0.39));
+    height: 100vh;
+}
+.video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9){
+    .video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.container {
+    position: absolute;
+    margin-left: 37.5%;
+    margin-top: 80px;
+    width: 380px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.311);
+    border: rgb(255, 255, 255) 2px solid;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px rgba(247, 242, 242, 0.295);
+}
+
+.text,
+.box {
+    margin-top: 5vh;
+    flex: 1;
+}
+
+.text {
+    margin-left: 20%;
+    font-weight: 300px;
+}
+
+.box {
+    margin-left: 15%;
+    margin-top: 25%;
+}
+
+.text h1 {
+    font-size: 70px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.text p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 200;
+}
+
+.text p a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: underline;
+
+}
+
+#logInForm {
+    background: transparent;
+    color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+input {
+    margin: 20px 0;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logInUsername,
+.logInPassword {
+    border-bottom: 1px solid #fff;
+}
+
+#logInButton {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 50%;
+    border-radius: 10px;
+    margin-top: 110px;
+    padding: 10px !important;
+}
+#loginError{
+    color: red;
+    font-size: medium;
+}
+#logInButton:hover {
+    background: rgb(255, 255, 255);
+    color: #000;
+    border: 1px solid rgb(255, 255, 255);
+}

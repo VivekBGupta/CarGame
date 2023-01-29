@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Game</title>
+    <link rel="stylesheet" href="./game.css">
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ252FeIAjdOhLkWc1j-Y3ZbDwSnF6PXa290ULo5jYqhKfKKDWms4cSIkKQsXm7ecIb8ks&usqp=CAU"
+        type="image/icon type">
+
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="logo"></div>
+        <div class="name">.</div>
+        <div class="score-section">
+            Score: <span class="bar-score">0</span>
+        </div>
+        <div class="highest-section">
+            Highest Score: <span class="highest-score">0</span>
+        </div>
+        <div class="leaderboard">
+            <a href="./leaderboard.html">LeaderBoard</a>
+        </div>
+    </div>
+    <div class="gamearea">
+        <div class="background-car">
+            <video autoplay loop muted plays-inline class="video">
+                <source src="./game.mp4" type="video/mp4">
+            </video>
+            <div class="startscreen">
+                <h1>Welcome to Game Screen</h1>
+                <p>Click Anywhere To Start the Game</p>
+            </div>
+        </div>
+        <div class="background-grass hide">
+            <div class="gamescreen">
+                
+            </div>
+            <div class="restart hide">
+                <h1> Game Over <br> Your Score is<br><span class="score">0</span></h1>
+                <br>
+                <button class="playAgain">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./game.js"></script>
+</body>
+
+</html>
